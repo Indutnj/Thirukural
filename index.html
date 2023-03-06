@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://play-lh.googleusercontent.com/jzsVuUNU27AvOOBYTV2Rpr34HwgPPnJYOJlw596aG3oqu-kbw2pplb3Pdfqs_pqb3Q"
+      sizes="16x16 24x24 32x32 48x48"
+    />
+    <title>Thirukkural</title>
+    <style>
+      html,
+      body {
+        margin: 0px auto;
+        max-width: 980px;
+        width: 100%;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        margin: 0px;
+        text-align: start;
+      }
+      .ancient_paper {
+        position: relative;
+        /*background-image: url("https://wallpaperaccess.com/full/781373.jpg");*/
+        background-image: url("bgnew.jpg");
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .banner {
+       font-size:50px;
+       text-align:center;
+       color:rgb(31, 0, 0);
+       /*color: white;*/
+       text-shadow: 2px 2px 4px #000000;
+
+      }
+.about{
+  font-size:12px;
+  padding:50px;
+  text-align:justify;
+  text-shadow: 2px 2px 4px #666666;
+  border:2px solid black;
+  border-radius: 25px;
+}
+      .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 300px);
+        padding: 50px;
+      }
+
+      .section {
+        font-size: 15px;
+      }
+
+    .inner{
+      padding:100px;
+      font-size:20px;
+      font-weight:bold;
+      text-shadow: 2px 2px 4px #000000;
+      
+    }
+
+
+    
+      .fab {
+        position: absolute;
+        bottom: 40px;
+        right: 100px;
+        width: 40px;
+        height: 40px;
+        /*background: brown;*/
+        outline: none;
+        border: none;
+        border-radius: 50%;
+        background-size: contain;
+        text-shadow: 2px 2px 4px #000000;
+        font-size:20px;
+      font-weight:bold;
+      cursor: pointer;
+      color:rgb(53, 0, 0)
+       /* background-image: url("refresh.png");*/
+      }
+
+      @media screen and (max-width: 690px) {
+        .thirukkural {
+          font-size: 1.4rem;
+        }
+      }
+
+      @media screen and (max-width: 560px) {
+        .thirukkural {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ancient_paper">
+      <div id="fab" class="fab" onclick="fetchKural();">அடுத்தது>></div>
+    
+      <div class="banner">திருக்குறள்</div>
+      <div class="about">திருக்குறள், சுருக்கமாகக் குறள் (ஆங்கிலம்: Tirukkuṟaḷ), ஒரு தொன்மையான தமிழ் மொழி இலக்கியமாகும். சங்க இலக்கிய வகைப்பாட்டில் பதினெண்கீழ்க்கணக்கு எனப்படும் பதினெட்டு நூல்களின் திரட்டில் இருக்கும் இந்நூல் குறள் வெண்பா என்னும் பாவகையினாலான 1,330 ஈரடிச் செய்யுள்களைக் கொண்டது. இந்நூல் முறையே அறம், பொருள், காமம் (அல்லது இன்பம்) ஆகிய மூன்று பகுப்புகளை அல்லது தொகுப்புகளைக் கொண்டது. இஃது அடிப்படையில் ஒரு வாழ்வியல் நூல். மாந்தர்கள் தம் அகவாழ்விலும் சுமூகமாகக் கூடி வாழவும் புற வாழ்விலும் இன்பமுடனும் இசைவுடனும் நலமுடனும் வாழவும் தேவையான அடிப்படைப் பண்புகளை விளக்குகிறது. அறநெறிகளைப் பற்றிய உலகின் மிகச்சிறந்த படைப்புகளில் ஒன்றாகக் கருதப்படும் இந்நூல், பொதுத்தன்மைக்கும் மதச்சார்பற்ற தன்மைக்கும் பெயர் பெற்றது. இதனை இயற்றியவர் திருவள்ளுவர் என்று பாரம்பரியமாக அறியப்படுகிறார். இந்நூலின் காலம் பொ.ஊ.மு. 300 முதல் பொ.ஊ. 5-ம் நூற்றாண்டு வரை எனப் பலவாறு கணிக்கப்படுகிறது. பாரம்பரியமாக இந்நூல் கடைச்சங்கத்தின் கடைசிப் படைப்பாகக் கருதப்பட்டாலும் மொழியியல் பகுப்பாய்வுகள் இந்நூல் பொ.ஊ. 450 முதல் 500 வரையிலான கடைச்சங்க காலத்திற்குப் பிறகு இயற்றப்பட்டதாகக் குறிக்கின்றன.</div>
+     
+        <div class="inner"> 
+            <h2 class="section" id="section" style="color:rgb(102, 43, 0);">Section</h2>
+        
+          <h5 clas="sub-heading" style="color:rgb(71, 0, 0);">குறள் எண்<span id="sub-heading">2</span></h5>
+         
+          
+            <h4 class="thirukkural" id="line1">Thirukkural</h4>
+       
+            <h4 class="thirukkural" id="line2">Thirukkural</h4>
+        
+            <p class="author" id="line2" style="color:rgb(49, 21, 0);">-திருவள்ளுவர்</p>
+          </div>
+   </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
